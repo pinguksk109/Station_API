@@ -1,0 +1,13 @@
+# version: '3'
+
+# services:
+#   training_database:
+#     image: mysql:5.7
+#     container_name: training_database
+#     environment:
+#       MYSQL_ROOT_USER: root
+#       MYSQL_ROOT_PASSWORD: pass1234
+#     ports:
+#       - "3306:3306"
+#     volumes:
+#       - ./mysql-data:/var/lib/mysql
