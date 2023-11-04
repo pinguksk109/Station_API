@@ -3,13 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- @formatter:off -->
-<mapper namespace="com.ot.infrastructure.repository.StationRepository">
+<mapper namespace="com.ot.infrastructure.repository.CompanyRepository">
 
-	<select id="getAllStation" resultType="com.ot.domain.response.StationResponse">
+	<select id="getAllCompany" resultType="com.ot.domain.response.CompanyResponse">
 		SELECT
 			*
 		FROM 
-			station
+			company
 	</select>
 	
 </mapper>

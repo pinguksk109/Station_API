@@ -15,17 +15,38 @@ public class StationController {
 
   @Autowired
   private StationService stationService;
-  
+
   Logger logger = LoggerFactory.getLogger(StationController.class);
-  
+
   /**
    * 駅データをすべて返します
+   * 
    * @return
    */
   @GetMapping("station/all")
   public ResponseEntity<?> getAllStation() {
     return ResponseEntity.ok().body(stationService.getAllStation());
   }
-  
-  
+
+  /**
+   * 会社データをすべて返します
+   * 
+   * @return
+   */
+  @GetMapping("company/all")
+  public ResponseEntity<?> getAllCompany() {
+    return ResponseEntity.ok().body(stationService.getAllCompany());
+  }
+
+  /**
+   * 線路データをすべて返します
+   * 
+   * @return
+   */
+  @GetMapping("line/all")
+  public ResponseEntity<?> getAllLine() {
+    return ResponseEntity.ok().body(stationService.getAllLine());
+  }
+
+
 }
