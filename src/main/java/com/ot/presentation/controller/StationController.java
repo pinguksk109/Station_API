@@ -23,7 +23,7 @@ public class StationController {
    * 
    * @return
    */
-  @GetMapping("station/all")
+  @GetMapping("station")
   public ResponseEntity<?> getAllStation() {
     return ResponseEntity.ok().body(stationService.getAllStation());
   }
@@ -33,7 +33,7 @@ public class StationController {
    * 
    * @return
    */
-  @GetMapping("company/all")
+  @GetMapping("company")
   public ResponseEntity<?> getAllCompany() {
     return ResponseEntity.ok().body(stationService.getAllCompany());
   }
@@ -43,7 +43,7 @@ public class StationController {
    * 
    * @return
    */
-  @GetMapping("line/all")
+  @GetMapping("line")
   public ResponseEntity<?> getAllLine() {
     return ResponseEntity.ok().body(stationService.getAllLine());
   }
